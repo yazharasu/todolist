@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<head>
+    <title>My To-Do List</title>
+    <meta name='viewport' content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="style.css">
+</head>
+
+<body>
+    <h1 class='title'>To-Do List</h1>
+
+    <section class='container grid'>
+        <div class='new_task'> 
+            <h2>Enter new task</h2> 
+            <input class='input textarea' type="textarea" placeholder="Enter your next task">
+        </div>
+        <div>
+            <h2>Target date</h2>
+            <input class="input target_date" type="date" placeholder="Target date">
+        </div>
+        <div class='slide_container'>
+            <h2>Priority level</h2>
+            <form class='buttons'>
+                <label for='button1'>Low</label>
+                <input class='input priority' type="radio" name='choice' id='button1'>
+                
+                <label for='button2'>Medium</label>
+                <input class='input priority' type="radio" name='choice' id='button2'>
+                
+                <label for='button3'>High</label>
+                <input class='input priority' type="radio" name='choice' id='button3'>
+            </form>
+        </div>
+
+        <div class='add_but'>
+            <button class='add_button'>Add</button>
+        </div>
+
+    </section>
+
+    <section class='list_container grid'>
+        <div class='list'>
+            <h1>Tasks</h1>
+            <ul class='task_list'>
+                <li class='grid'>
+                    <p>Task 1 </p>
+                    <span> date </span> 
+                    <div class='buttons'>
+                        <button> &#10004; </button>
+                        <button> X </button>
+                    </div>
+                </li>  
+            </ul>
+        </div>
+        <div class='list_periority'>
+            <h1>High periority tasks</h1>
+            <ul class=periority_list>
+                <li class='grid'>
+                    <p>Task 1 </p>
+                    <span> date </span>  
+                </li> 
+            </ul>
+        </div>
+        <div class='stats'>
+            <p>Number of live tasks:</p>
+            <p>Number of high periority tasks:</p>
+        </div>
+    </section>
+
+<script src="script.js"></script>
+
+</body>
