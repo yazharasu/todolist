@@ -152,7 +152,7 @@ body{
         height: 20px;
     }
     .list_container .high{
-        border: 1px solid red;
+        border: 2px solid coral;
     }
     .del_button:hover{
         background-color: indianred;

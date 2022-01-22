@@ -1,7 +1,7 @@
 
 const button = document.querySelector('.add_button');
-const li_source = document.querySelector('.task_list li');
-const pr_list_source = document.querySelector('.periority_list li');
+const li_source = document.querySelector('.task_list');
+const pr_list_source = document.querySelector('.periority_list');
 /*console.log( task_date.innerTex) */
 
 button.addEventListener('click', function(e){
@@ -33,7 +33,7 @@ button.addEventListener('click', function(e){
     li.appendChild(date);
     li.appendChild(div_buttons);
     li.classList.add('grid');
-    li_source.parentElement.appendChild(li);
+    li_source.appendChild(li);
 
     if(priority=='High'){
         li.classList.add('high');
@@ -45,7 +45,7 @@ button.addEventListener('click', function(e){
         pr_li.appendChild(txt);
         pr_li.appendChild(date);
         pr_li.classList.add('grid')
-        pr_list_source.parentElement.appendChild(pr_li);
+        pr_list_source.appendChild(pr_li);
     };
     
     const all_tasks = document.querySelector('.task_list')
