@@ -35,26 +35,34 @@
         <div class='add_but'>
             <button class='add_button'>Add</button>
         </div>
-
     </section>
 
     <section class='list_container grid'>
         <div class='list'>
             <h1>Tasks</h1>
+            <div class='search'>
+                <input class='search_ip' type='textarea' name="search_tasks" id='search' placeholder='Search task...'>
+            </div>
             <ul class='task_list'>
+            </ul><br>
+
+            <form class="check">
+                <label for='check_box'>Hide all tasks</label>
+                <input class='check_box' type="checkbox" name='check_box' id="check_box">
+            </form>
+        </div>
+
+        <div class='list_priority'>
+            <h1>High priority tasks</h1>
+            <ul class='priority_list'>
+
             </ul>
         </div>
-        <div class='list_periority'>
-            <h1>High periority tasks</h1>
-            <ul class=periority_list>
-            </ul>
-        </div>
+
         <div class='stats'>
-            <p>Number of live tasks:</p>
-            <p>Number of high periority tasks:</p>
+            <p>Number of live tasks: </p>
+            <p>Number of high periority tasks: </p>
         </div>
     </section>
-
 <script src="script.js"></script>
-
 </body>

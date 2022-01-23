@@ -80,7 +80,7 @@ body{
         padding: 0;
     }
     .list_container div{
-        padding: 10px 0px;
+        padding: 0px 0px;
         display: inline-block;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -95,15 +95,43 @@ body{
         color:darkcyan;
         padding:10px; 
     }   
+  
+    .list_container .hide{
+        display: none;
+    }
+
+    .list_container div .search_ip{
+        text-align: center;
+        padding: 0;
+        margin: 10px auto;
+    }
+    .list_container div .check{
+        display: inline-block;
+        text-align: center;
+        color:darkslateblue;
+        width: 100%;
+    }
+
     .list_container li{
         background-color:lightgray;
         padding: 5px 0;
         margin: 5px 0;
     }
+
+    .list_container .stats{
+        width: 70%;
+        background-color:darkcyan;
+        color: whitesmoke;
+    }
     .stats p{
         font-size: 16px;
-        color: darkcyan;
+        padding: 5px;
     }
+    .stats p span{
+        font-size: 17px;
+        font-weight: bold;
+    }
+
     .list_container ul{
         display:inline-block;
         width: 90%;
@@ -162,7 +190,5 @@ body{
     }
     .line_through{
         text-decoration:line-through green;
-
     }
-
 }
